@@ -25,6 +25,7 @@ var reverseList = function(head) {
 
 // 2. 递归解法
 
+
 var reverseList = function(head) {
   if (head == null || head.next == null) return head
   const p = reverseList(head.next)
