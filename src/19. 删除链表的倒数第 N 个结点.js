@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: changqing
  * @Date: 2021-11-10 17:26:50
- * @LastEditTime: 2021-11-10 18:16:52
+ * @LastEditTime: 2021-11-10 18:45:38
  * @LastEditors: changqing
  * @Usage: 
  */
@@ -46,6 +46,24 @@ var removeNthFromEnd =function(head,n) {
   }
   let prev = stack[stack.length-1];
   prev.next = prev.next.next;
+  let ans = dummy.next;
+  return ans;
+}
+
+// 方法三：双指针
+
+var removeNthFromEnd =function(head,n) {
+  let dummy = {val:0,next:head};
+  let first = head;
+  let second = dummy;
+  for (int i = 0; i < n; ++i) {
+      first = first.next;
+  }
+  while (first != null) {
+      first = first.next;
+      second = second.next;
+  }
+  second.next = second.next.next;
   let ans = dummy.next;
   return ans;
 }
