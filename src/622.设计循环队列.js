@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Author: changqing
+ * @Date: 2021-11-27 18:59:48
+ * @LastEditTime: 2021-11-27 20:05:57
+ * @LastEditors: changqing
+ * @Usage: 
+ */
 //对于一个固定大小的数组，任何位置都可以是队首，只要知道队列长度，就可以根据下面公式计算出队尾位置：
 //tailIndex=(headIndex+count−1) mod capacity
 //其中 capacity 是数组长度，count 是队列长度，headIndex 和 tailIndex 分别是队首 head 和队尾 tail 索引。
