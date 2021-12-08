@@ -22,9 +22,10 @@ var rotateRight = function(head, k) {
   let pre = head, ret = head;
 
   // 用--n 目的少旋转一个，便于操作
-  while(--n) { 
+  while(--n > 0) { 
     pre = pre.next;
   }
+  // pre指向的就是目标节点的前一个节点
   // ret指向新头节点
   ret = pre.next;
 

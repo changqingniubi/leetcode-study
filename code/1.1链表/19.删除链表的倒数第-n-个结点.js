@@ -39,8 +39,8 @@ var removeNthFromEnd = function(head, n) {
   // 定义after指针，然后两个指针一起向后走
   let after = ret;
   while(front.next) {
-    after = after.next;
     front = front.next;
+    after = after.next;
   }
 
   // 此时after，指向倒数第n个节点的前一个节点

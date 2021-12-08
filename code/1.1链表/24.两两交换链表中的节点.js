@@ -19,11 +19,11 @@
 var swapPairs = function(head) {
   if(!head || !head.next) return head;
 
-  let ret = new ListNode(-1, head);
+  let ret = new ListNode(null, head);
   
   // pre： 需要交换节点的第一个节点，
   // tail:  需要交换节点的第二个节点，
-  // temp: 两个交换节点的前一个节点，即已经交换完的尾结点
+  // temp: 两个交换节点的前一个节点，即 **已经交换完的尾结点**
   let pre = ret, tail = head, temp = ret;
   
   while(temp.next && temp.next.next){ // 如果后面还存在两个未交换节点
@@ -55,5 +55,14 @@ var swapPairs = function(head) {
   }
   return ret.next;
 }
+
+
+
+
+
+
+
+return ret.next;
+
 // @lc code=end
 

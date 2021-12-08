@@ -14,9 +14,11 @@ const reserve = function(head, n){
   if(!head) return null;
   let pre = null, cur = head;
   // 翻转前k个节点
-  while(cur && n-- > 0) {
+  while(cur && n-- > 0) { // 3
     [cur.next, pre, cur] = [pre, cur, cur.next];
   }
+
+  // cur
 
   // head: 翻转部分的尾结点, pre: 翻转部分的头节点
   // cur: 剩余部分的头节点
@@ -27,6 +29,7 @@ const reserve = function(head, n){
 var reverseBetween = function(head, left, right) {
   if(!head || !head.next) return head;
   if(right - left === 0) return head;
+  
   let ret = new ListNode(null, head); // 如果可能更换头节点，就需要用到虚拟头节点
 
   // 查找left节点的 前一个节点

@@ -19,6 +19,7 @@
 var deleteDuplicates = function(head) {
   if(!head) return null;
   let ret = new ListNode(-1, head);
+
   let pre = ret, cur = head;
   while(cur && cur.next) {
     if(cur.next.val !== pre.next.val){
@@ -31,6 +32,7 @@ var deleteDuplicates = function(head) {
       pre.next = cur.next;
       cur = cur.next;
     }
+    
   }
   return ret.next;
 };
