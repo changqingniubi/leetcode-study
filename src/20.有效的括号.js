@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Author: changqing
+ * @Date: 2021-12-08 17:38:32
+ * @LastEditTime: 2021-12-11 16:36:48
+ * @LastEditors: changqing
+ * @Usage: 
+ */
 
 
 // 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效。
