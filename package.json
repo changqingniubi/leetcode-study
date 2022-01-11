@@ -1,0 +1,25 @@
+{
+  "name": "leetcode-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changqingniubi/leetcode-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changqingniubi/leetcode-study/issues"
+  },
+  "homepage": "https://github.com/changqingniubi/leetcode-study#readme",
+  "dependencies": {
+    "grapheme-splitter": "^1.0.4"
+  }
+}
