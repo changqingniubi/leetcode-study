@@ -1,30 +1,11 @@
 /*
  * @Description: 
  * @Author: changqing
- * @Date: 2022-01-17 12:29:48
- * @LastEditTime: 2022-01-23 20:43:52
+ * @Date: 2022-01-23 20:36:10
+ * @LastEditTime: 2022-01-23 20:50:38
  * @LastEditors: changqing
  * @Usage: 
  */
-/*
- * @lc app=leetcode.cn id=1319 lang=javascript
- *
- * [1319] 连通网络的操作次数
- */
-
-// @lc code=start
-/**
- * @param {number} n
- * @param {number[][]} connections
- * @return {number}
- */
-
-/**
- * 题意可转化为将所有计算机链成一个集合
- * 所以答案为总集合数减一
- * 如果计算基数大于线缆树+1,则不可能全部链接
- */
-
 class unionSet {
   constructor(n) {
     this.father = new Array(n).fill(0).map((val, i) => i);
@@ -53,5 +34,7 @@ var makeConnected = function(n, connections) {
   // 返回没被联通的计算机数量
   return cont - 1;
 };
-// @lc code=end
 
+let n = 4, connections = [[0,1],[0,2],[1,2]]
+
+makeConnected(n, connections);

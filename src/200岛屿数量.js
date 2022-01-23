@@ -1,21 +1,10 @@
 /*
  * @Description: 
  * @Author: changqing
- * @Date: 2022-01-17 12:29:48
- * @LastEditTime: 2022-01-23 17:43:21
+ * @Date: 2022-01-23 17:32:18
+ * @LastEditTime: 2022-01-23 17:53:42
  * @LastEditors: changqing
  * @Usage: 
- */
-/*
- * @lc app=leetcode.cn id=200 lang=javascript
- *
- * [200] 岛屿数量
- */
-
-// @lc code=start
-/**
- * @param {character[][]} grid
- * @return {number}
  */
 class UnionSet {
   constructor(n = 100) {
@@ -62,5 +51,3 @@ var numIslands = function(grid) {
 
   return count;
 };
-
-// @lc code=end

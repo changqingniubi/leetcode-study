@@ -2,8 +2,8 @@
  * @Description  : 并查集
  * @Autor        : yanwang
  * @CreateDate   : 2022-01-16 14:29:04
- * @LastEditors  : yanwang
- * @LastEditTime : 2022-01-16 15:54:39
+ * @LastEditors: changqing
+ * @LastEditTime: 2022-01-17 12:54:57
  */
 // 颜色即代表了集合的名字
 // quick-find算法
@@ -128,7 +128,7 @@ class UnionSet3 {
 }
 
 // /**带路径压缩的**/ weighted-queck-union
-class UnionSet4 {
+class UnionSet {
   constructor(n = 100) {
     this.n = n;
     this.father = new Array(n);
@@ -174,8 +174,8 @@ class UnionSet4 {
 }
 
 
- /**带路径压缩的**/
-class UnionSet {
+ /**只带路径压缩的**/
+class UnionSet4 {
   constructor(n = 100) {
     this.n = n;
     this.father = new Array(n);

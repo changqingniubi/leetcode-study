@@ -1,23 +1,11 @@
 /*
  * @Description: 
  * @Author: changqing
- * @Date: 2022-01-17 12:29:48
- * @LastEditTime: 2022-01-23 20:35:23
+ * @Date: 2022-01-23 20:27:28
+ * @LastEditTime: 2022-01-23 20:35:53
  * @LastEditors: changqing
  * @Usage: 
  */
-/*
- * @lc app=leetcode.cn id=684 lang=javascript
- *
- * [684] 冗余连接
- */
-
-// @lc code=start
-/**
- * @param {number[][]} edges
- * @return {number[]}
- */
-
 class unionSet {
   constructor(n) {
     this.father = new Array(n).fill(0).map((val, i) => i);
@@ -42,4 +30,3 @@ var findRedundantConnection = function(edges) {
 
   return ret;
 };
-// @lc code=end
